@@ -4,7 +4,9 @@
   "description": "Alura JavaScript tdd courses",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/*js",
+    "prepush": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/juniorconquista/js-tdd/issues"
   },
-  "homepage": "https://github.com/juniorconquista/js-tdd#readme"
+  "homepage": "https://github.com/juniorconquista/js-tdd#readme",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "husk": "^0.5.3"
+  }
 }
